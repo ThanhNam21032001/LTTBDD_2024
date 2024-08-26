@@ -1,19 +1,86 @@
 //1. Print numbers from 1 to 10
-console.log("1. Print numbers from 1 to 10")
+console.log("Print numbers from 1 to 10")
 for(let i =1;i<=10;i++)
     {
         console.log(i)
     }
 //2. Print the odd numbers less than 100
-
+console.log("Print the odd numbers less than 100")
+for(let i = 1; i <= 100; i += 2)
+    {
+        console.log(i)
+    }
 //3. Print the multiplication table with 7
+console.log("Print the multiplication table with 7")
+for(let i = 1; i <= 10; i++)
+    {
+        let row = "7 * " + i + " = " + 7 * i;
+        console.log(row);
+    }
 //4. Print all the multiplication tables with numbers from 1 to 10
+console.log("Print all the multiplication tables with numbers from 1 to 10")
+for(let i = 1; i <= 10; i++)
+    {
+        table(i)
+        console.log("")
+    }
+    
+    function table(n)
+    {
+        for(let i = 1; i <= 10; i++)
+        {
+            let row = n + " * " + i + " = " + n * i;
+            console.log(row)
+        }
+    }
 //5. Calculate the sum of numbers from 1 to 10
+console.log("Calculate the sum of numbers from 1 to 10")
+let sum = 0;
+
+for(let i = 1; i <= 10; i++)
+{
+    sum += i;
+}
+
+console.log(sum)
 //6. Calculate 10!
+console.log(" Calculate 10!")
+let rs=1;
+for(let i=1;i<=10;i++){
+    rs*=i;
+}
+console.log(rs)
 //7. Calculate the sum of even numbers greater than 10 and less than 30
+console.log("Calculate the sum of even numbers greater than 10 and less than 30")
+let sum7 = 0;
+
+for(let i = 11; i <= 30; i += 2)
+{
+    sum7 += i;
+}
+
+console.log(sum7);
 //8. Create a function that will convert from Celsius to Fahrenheit
+console.log(" Create a function that will convert from Celsius to Fahrenheit")
+function celsiusToFahrenheit(n)
+{
+    return n * 1.8 + 32;
+}
+
+let rs8 = celsiusToFahrenheit(20);
+console.log(rs8);
 //9. Create a function that will convert from Fahrenheit to Celsius
+console.log(" Create a function that will convert from Fahrenheit to Celsius")
+
+function fahrenheitToCelsius(n)
+{
+    return (n - 32) / 1.8;
+}
+
+let rs9 = fahrenheitToCelsius(68);
+console.log(rs9);
 //10. Calculate the sum of numbers in an array of numbers
+
 //11. Calculate the average of the numbers in an array of numbers
 
 //12. Create a function that receives an array of numbers as argument and returns an array

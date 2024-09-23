@@ -80,7 +80,22 @@ function fahrenheitToCelsius(n)
 let rs9 = fahrenheitToCelsius(68);
 console.log(rs9);
 //10. Calculate the sum of numbers in an array of numbers
+console.log("Calculate the sum of numbers in an array of numbers")
+function sumArray(ar)
+{
+    let sum = 0;
+    
+    for(let i = 0; i < ar.length; i++)
+    {
+        sum += ar[i];
+    }
+    
+    return sum;
+}
 
+let ar = [8, 2, 11, 56, -17, 59, 32, -19, 35];
+let sum10 = sumArray(ar);
+console.log(sum10);
 //11. Calculate the average of the numbers in an array of numbers
 
 //12. Create a function that receives an array of numbers as argument and returns an array

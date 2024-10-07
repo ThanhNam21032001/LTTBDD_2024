@@ -69,20 +69,56 @@ const App = () => {
 
   return (
     <View style={styles.container}>
+      <View style={styles.top}>
+        <Image source={require("./assets/ant-design_arrow-left-outlined.png")} style={styles.imageicon}/>
+        <Text style={{color:"white", fontSize:20}}>Chat</Text>
+        <Image source={require("./assets/bi_cart-check.png")} style={styles.imageicon}/>
+
+      </View>
+      <View style={styles.mid}>
+        <Text style={{margin:10}}>Bạn có thắc mắc về sản phẩm vừa xem đừng ngại thắc mắc với shop</Text>
       <FlatList
         data={DATA}
         renderItem={renderItem}
         keyExtractor={(item) => item.id}
       />
+      </View>
+      <View style={styles.bot}></View>
     </View>
   );
 };
 
 const styles = StyleSheet.create({
+  top:{
+    backgroundColor: "#1BA9FF",
+          marginTop: 30,
+          alignItems: "center",
+          paddingHorizontal: 30,
+          height: 42,
+          justifyContent: "space-between",
+          flexDirection: "row",
+  },
+  mid:{
+    flex:1
+  },
+  bot:{
+    backgroundColor: "#1BA9FF",
+          marginTop: 30,
+          alignItems: "center",
+          paddingHorizontal: 30,
+          height: 42,
+          justifyContent: "space-between",
+          flexDirection: "row",
+  },
   container: {
     flex: 1,
     backgroundColor: '#fff',
-    paddingHorizontal: 10,
+    
+  },
+  imageicon: {
+    width: 30,
+    height: 30,
+    borderRadius: 5,
   },
   itemContainer: {
     flexDirection: 'row',

@@ -83,7 +83,12 @@ const App = () => {
         keyExtractor={(item) => item.id}
       />
       </View>
-      <View style={styles.bot}></View>
+      <View style={styles.bot}>
+        <Image source={require("./assets/menu.png")} style={styles.imageicon}/>
+        <Image source={require("./assets/home.png")} style={styles.imageicon}/>
+        <Image source={require("./assets/return.png")} style={styles.imageicon}/>
+
+      </View>
     </View>
   );
 };

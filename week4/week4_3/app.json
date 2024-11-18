@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "week5",
-    "slug": "snack-e3f4e36a-850d-4281-bf48-b4823ea4a3b7",
+    "name": "week4_1",
+    "slug": "snack-eed3e45d-19bf-4ff2-85d6-a3d553a458c8",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -11,6 +11,9 @@
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
     "ios": {
       "supportsTablet": true
     },
